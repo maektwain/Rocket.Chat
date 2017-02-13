@@ -34,7 +34,8 @@
 		"chat"
 	],
 	"scripts": {
-		"start": "meteor npm i && meteor",
+		"postinstall":"curl https://install.meteor.com/ | sh",
+		"start": "./meteor npm i && ./meteor",
 		"lint": "eslint .",
 		"lint-fix": "eslint . --fix",
 		"stylelint": "stylelint **/*.less",
